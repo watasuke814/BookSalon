@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webapp1</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script type="text/javascript" script src="./javascripts/test.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+    <body>
+    <header>
+      <div class="header-logo">
+         <%=link_to("BookSalon","/")%>
+      </div>
+      <ul class="header-menus">
+        <% if @current_user %>
+          <li>
+           <%=link_to(@current_user.name,"/users/#{@current_user.id}")%>
+          </li>
+
+          <!--
+          <li>
+            <%= link_to("User List", "/users/index") %>
+          </li>
+          -->
+          
+           <li>
+            <%= link_to("Post List", "/posts/index") %>
+          </li>
+        
+          <li>
+           <%= link_to("New Post", "/posts/new") %>
+          </li>
+          <li>
+            <%= link_to("Logout", "/logout", {method: :post}) %>
+          </li>
+        <%else%>
+          <li>
+            <%=link_to("About","/about")%>
+          </li>
+          <li>
+            <%=link_to("Sign Up","/signup")%>
+          </li>
+          <li>
+            <%= link_to("Login","/login")%>
+          </li>
+        <%end%>
+      </ul>
+    </header>
+
+    <!--
+      フラッシュ
+     <% if flash[:notice] %>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+   -->
+    <%= yield %>
+
+</html>

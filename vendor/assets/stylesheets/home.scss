@@ -1,0 +1,36 @@
+.section {
+  width: 100%;
+}
+.section-content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 40px 60px;
+  text-align: center;
+}
+
+h2 {
+  color: #232323;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h3 {
+  color: #232323;
+}
+
+p {
+  color: #232323;
+}
+
+.section-red {
+  background-color: #ff6363;
+}
+
+.section-blue {
+  background-color: #8fbbff;
+}
+
+.section-green {
+  background-color: #fff;
+}
