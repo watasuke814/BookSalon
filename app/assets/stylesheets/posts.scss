@@ -130,6 +130,11 @@
 
 .postitem{
   text-align: center;
+  position: relative;
+}
+
+.postcontent{
+  position: relative;
 }
 
 .postitem img{
@@ -151,7 +156,8 @@
 
 .posts-show-item p {
   font-size: 24px;
-  margin: 20px 0;
+  margin: 30px 0;
+  color: black;
 }
 
 .post-time {

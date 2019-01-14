@@ -9,9 +9,9 @@
         <p><%= @post.post_title %></p>
         <img src="<%= "/pic_images/#{@post.pic_image}" %>">
       </div>
-      <p>
-        <%= simple_format(@post.content) %> 
-      </p>
+      <div class="postcontent">
+        <%= simple_format(@post.content) %>
+      </div>
       <div class="post-time">
         <%= @post.created_at %>
       </div>
@@ -26,13 +26,35 @@
         <%end%>
       <%end%>
       <%= @likes_count %>
-
       <% if @post.user_id == @current_user.id %>
        <div class="post-menus">
-        <%= link_to("編集", "/posts/#{@post.id}/edit") %>
-        <%= link_to("削除", "/posts/#{@post.id}/destroy", {method: "post"}) %>
+        <%= link_to("edit", "/posts/#{@post.id}/edit") %>
+        <%= link_to("delete", "/posts/#{@post.id}/destroy", {method: "post"}) %>
        </div>
       <% end %>
+
+      <!--
+        <div class="post-menus">
+          <%= link_to("comment","/posts/#{@post.id}/comment")%>
+        </div>
+      -->
+
     </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,14 +7,16 @@
           <img src="<%= "/user_images/#{@user.image_name}" %>">
         <%end%>
       <% end %>
+    <!--
       <p><%= @user.email %></p>
+    -->
     </div>
-    
+
     <ul class="user-tabs">
       <li><%= link_to("post", "/users/#{@user.id}") %></li>
-      <li class="active"><%= link_to("good", "/users/#{@user.id}/likes") %></li>
+      <li class="active"><%= link_to("checked", "/users/#{@user.id}/likes") %></li>
     </ul>
-    
+
     <% @likes.each do |like| %>
       <% post = Post.find_by(id: like.post_id) %>
       <div class="posts-good-item">

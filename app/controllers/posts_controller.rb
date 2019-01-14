@@ -49,13 +49,27 @@ class PostsController < ApplicationController
   end
 
   def update
-  	@post = Post.find_by(id: params[:id])
-  	@post.content = params[:content]
-  	if @post.save
-  		flash[:notice] = "投稿を編集しました"
-  		redirect_to("/posts/index")
-  	else
-  		render("/posts/edit")
+    	@post = Post.find_by(id: params[:id])
+
+      #ポストタイトル
+      @post.post_title = params[:post_title]
+
+      #画像
+    if params[:image]
+      @name = params[:image].original_filename
+      @post.pic_image = "#{@name}"
+      image = params[:image]
+      File.binwrite("public/pic_images/#{@post.pic_image}", image.read)
+    end
+
+      #ポスト内容
+    	@post.content = params[:content]
+
+    if @post.save
+    	flash[:notice] = "投稿を編集しました"
+    	redirect_to("/posts/index")
+    else
+    	render("/posts/edit")
   	end
   end
 
