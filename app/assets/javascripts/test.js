@@ -1,10 +1,14 @@
-var option = {
-  section : '.js-section', // 対象を指定
-  easing: "swing", // イージングをしてい(jQueryのanimation)
-  scrollSpeed: 600, // スクロール時の速度
-  scrollbars: true, // スクロールバーを表示するか
-};
+$(document).on('turbolinks:load', function() {
 
-$(function() {
-  $.scrollify(option); // scrollifyの実行
-});
+    if ($(".section").length) { // そのページにboxクラスの要素が存在するならscrollifyを有効にする
+      $.scrollify.enable();
+      $.scrollify({
+        section: ".section",
+        // 各設定
+      });
+
+    } else { // 存在しないなら無効化する
+      $.scrollify.disable();
+    }
+
+  });

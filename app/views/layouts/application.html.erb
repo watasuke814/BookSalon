@@ -26,11 +26,11 @@
             <%= link_to("User List", "/users/index") %>
           </li>
           -->
-          
+
            <li>
             <%= link_to("Post List", "/posts/index") %>
           </li>
-        
+
           <li>
            <%= link_to("New Post", "/posts/new") %>
           </li>
@@ -38,9 +38,11 @@
             <%= link_to("Logout", "/logout", {method: :post}) %>
           </li>
         <%else%>
+        <!--
           <li>
             <%=link_to("About","/about")%>
           </li>
+        -->
           <li>
             <%=link_to("Sign Up","/signup")%>
           </li>

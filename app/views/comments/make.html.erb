@@ -1,0 +1,18 @@
+<div class="main posts-new">
+  <div class="container">
+    <h1 class="form-heading">New Comment</h1>
+
+
+    <%= form_tag("/comments/#{@comment.id}/reply",{multipart: true}) do %>
+	    <div class="form">
+	     <div class="form-body">
+           <p class="title">Comment</p>
+	       <textarea name="comment"></textarea>
+	       <input type="submit" value="Send">
+	     </div>
+	    </div>
+    <%end%>
+
+
+  </div>
+</div>

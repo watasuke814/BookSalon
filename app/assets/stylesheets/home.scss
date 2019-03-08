@@ -5,7 +5,6 @@
 
 html {
   font: 100%/1.5 'Avenir Next', 'Hiragino Sans', sans-serif;
-  
   letter-spacing: 1px;
 }
 
@@ -275,7 +274,7 @@ header {
   font-size: 14px;
 }
 
-/* test ====================================== 
+/* test ======================================
 
 .section {
   width: 100%;
@@ -317,3 +316,12 @@ p {
 }
 
 */
+.section-red {
+  background-size: cover;
+  background-image: url("/haikei1.png");
+}
+
+.section-green {
+  background-size: cover;
+  background-image: url("/woman.jpg");
+}

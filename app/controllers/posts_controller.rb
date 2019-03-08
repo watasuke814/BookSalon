@@ -5,13 +5,13 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all.order(created_at: :desc)
-
   end
-  
+
   def show
     @post = Post.find_by(id: params[:id])
     @user = @post.user
     @likes_count = Like.where(post_id: @post.id).count
+    @comments = Comment.all.order(created_at: :desc)
   end
 
   def new
@@ -75,6 +75,7 @@ class PostsController < ApplicationController
 
   def destroy
   	@post = Post.find_by(id: params[:id])
+    @comments = Comment.where(post_id: @post.id)
   	@post.destroy
   	flash[:notice] = "投稿を削除しました"
   	redirect_to("/posts/index")

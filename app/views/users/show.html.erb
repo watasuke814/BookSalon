@@ -11,7 +11,7 @@
       <p><%=@user.email %></p>
     -->
     </div>
-    
+
     <ul class="user-tabs">
       <li class="active"><%=link_to("post","/users/#{@user.id}")%></li>
       <li><%=link_to("checked","/users/#{@user.id}/likes")%></li>
@@ -27,7 +27,7 @@
             <%= link_to(post.user.name, "/users/#{post.user.id}") %>
           </div>
           <%= link_to(post.post_title, "/posts/#{post.id}") %>
-        </div>
+      　</div>
       </div>
     <%end%>
   </div>

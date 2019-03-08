@@ -1,7 +1,92 @@
-<div class="main top-main">
-  <div class="top-message">
-    <h2>本は世界を広げる</h2>
-    <p>気になる本を探してみよう!</p>
+<section class="section section-blue js-section" data-section-name="section1">
+  <div class="section-content">
+    <div class="main top-main">
+      <div class="top-message">
+        <h2>本は世界を広げる</h2>
+        <p>素敵な本を見つけてみよう!</p>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
+<section class="section section-red js-section" data-section-name="section2">
+  <div class="section-content">
+    <header>
+      <div class="header-logo">
+         <%=link_to("BookSalon","/")%>
+      </div>
+      <ul class="header-menus">
+        <% if @current_user %>
+          <li>
+           <%=link_to(@current_user.name,"/users/#{@current_user.id}")%>
+          </li>
+
+          <!--
+          <li>
+            <%= link_to("User List", "/users/index") %>
+          </li>
+          -->
+
+           <li>
+            <%= link_to("Post List", "/posts/index") %>
+          </li>
+
+          <li>
+           <%= link_to("New Post", "/posts/new") %>
+          </li>
+          <li>
+            <%= link_to("Logout", "/logout", {method: :post}) %>
+          </li>
+        <%else%>
+          <li>
+            <%=link_to("Sign Up","/signup")%>
+          </li>
+          <li>
+            <%= link_to("Login","/login")%>
+          </li>
+        <%end%>
+      </ul>
+    </header>
+  </div>
+</section>
+
+<section class="section section-green js-section" data-section-name="section3">
+  <div class="section-content">
+    <header>
+      <div class="header-logo">
+         <%=link_to("BookSalon","/")%>
+      </div>
+      <ul class="header-menus">
+        <% if @current_user %>
+          <li>
+           <%=link_to(@current_user.name,"/users/#{@current_user.id}")%>
+          </li>
+
+          <!--
+          <li>
+            <%= link_to("User List", "/users/index") %>
+          </li>
+          -->
+
+           <li>
+            <%= link_to("Post List", "/posts/index") %>
+          </li>
+
+          <li>
+           <%= link_to("New Post", "/posts/new") %>
+          </li>
+          <li>
+            <%= link_to("Logout", "/logout", {method: :post}) %>
+          </li>
+        <%else%>
+          <li>
+            <%=link_to("Sign Up","/signup")%>
+          </li>
+          <li>
+            <%= link_to("Login","/login")%>
+          </li>
+        <%end%>
+      </ul>
+    </header>
+  </div>
+</section>

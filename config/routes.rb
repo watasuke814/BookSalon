@@ -21,6 +21,9 @@ get 'posts/:id/edit' => 'posts#edit'
 post 'posts/:id/update' => 'posts#update'
 post 'posts/:id/destroy' => 'posts#destroy'
 
+get 'comments/:id' => 'comments#make'
+post 'comments/:id/reply' => 'comments#reply'
+
 root 'home#top'
 get 'about' => 'home#about'
 get 'test' => 'home#test'
