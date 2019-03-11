@@ -44,9 +44,9 @@ class PostsController < ApplicationController
     end
   end
 
-  def edit
-  	@post = Post.find_by(id: params[:id])
-  end
+    def edit
+    	@post = Post.find_by(id: params[:id])
+    end
 
   def update
     	@post = Post.find_by(id: params[:id])

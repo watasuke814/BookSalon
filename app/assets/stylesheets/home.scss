@@ -193,7 +193,8 @@ header {
 .about-main p {
   padding-left: 150px;
   font-weight: 200;
-  font-size: 20px;
+  font-size: 23px;
+  font-weight: 300;
   position: relative;
 }
 
@@ -318,10 +319,10 @@ p {
 */
 .section-red {
   background-size: cover;
-  background-image: url("/haikei1.png");
+  background-image: url("/books.png");
 }
 
 .section-green {
   background-size: cover;
-  background-image: url("/woman.jpg");
+  background-image: url("/quote.png");
 }
