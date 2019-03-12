@@ -5,7 +5,7 @@
 ユーザーが読了した本の感想を呟き、読書家が新しい本と出会えるようにするwebアプリです。    
 
 
-## 使い方
+## 主な使い方
 入力and投稿
 <img width="1440" alt="スクリーンショット 2019-03-12 15 54 43" src="https://user-images.githubusercontent.com/40481945/54180602-5c648c80-44df-11e9-8810-087d9cabde2d.png">  
 
@@ -14,6 +14,8 @@ Post Listに反映
 
 投稿詳細
 <img width="1440" alt="スクリーンショット 2019-03-12 15 52 29" src="https://user-images.githubusercontent.com/40481945/54180799-db59c500-44df-11e9-85c7-0e008880a196.png">  
+
+## 主な使い方
 
 
 ## 言語,プラグイン等
