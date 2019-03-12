@@ -8,6 +8,8 @@
 ## 使い方
 <img width="1440" alt="スクリーンショット 2019-03-12 15 54 43" src="https://user-images.githubusercontent.com/40481945/54180602-5c648c80-44df-11e9-8810-087d9cabde2d.png">
 
+<img width="1440" alt="スクリーンショット 2019-03-12 15 52 45" src="https://user-images.githubusercontent.com/40481945/54180700-99c91a00-44df-11e9-98fb-b493c37385b7.png">
+
 
 ## 言語,プラグイン等
 - Ruby 2.4.4
