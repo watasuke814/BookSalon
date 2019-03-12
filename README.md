@@ -15,6 +15,11 @@ Post Listに反映
 投稿詳細
 <img width="1440" alt="スクリーンショット 2019-03-12 15 52 29" src="https://user-images.githubusercontent.com/40481945/54180799-db59c500-44df-11e9-85c7-0e008880a196.png">  
 
+コメント機能もあります
+<img width="1440" alt="スクリーンショット 2019-03-12 16 08 12" src="https://user-images.githubusercontent.com/40481945/54181272-5c658c00-44e1-11e9-8228-9049c7860dd1.png">
+
+<img width="1440" alt="スクリーンショット 2019-03-12 16 08 25" src="https://user-images.githubusercontent.com/40481945/54181283-625b6d00-44e1-11e9-9056-e125b2d0e92c.png">
+
 ## 主な使い方
 
 
