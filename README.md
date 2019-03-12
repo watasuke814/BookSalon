@@ -6,12 +6,14 @@
 
 
 ## 使い方
-<img width="1440" alt="スクリーンショット 2019-03-12 15 54 43" src="https://user-images.githubusercontent.com/40481945/54180602-5c648c80-44df-11e9-8810-087d9cabde2d.png">
+<img width="1440" alt="スクリーンショット 2019-03-12 15 54 43" src="https://user-images.githubusercontent.com/40481945/54180602-5c648c80-44df-11e9-8810-087d9cabde2d.png">  
+入力and投稿
 
-<img width="1440" alt="スクリーンショット 2019-03-12 15 52 45" src="https://user-images.githubusercontent.com/40481945/54180700-99c91a00-44df-11e9-98fb-b493c37385b7.png">
+<img width="1440" alt="スクリーンショット 2019-03-12 15 52 45" src="https://user-images.githubusercontent.com/40481945/54180700-99c91a00-44df-11e9-98fb-b493c37385b7.png">  
+Post Listに反映
 
-<img width="1440" alt="スクリーンショット 2019-03-12 15 52 29" src="https://user-images.githubusercontent.com/40481945/54180799-db59c500-44df-11e9-85c7-0e008880a196.png">
-
+<img width="1440" alt="スクリーンショット 2019-03-12 15 52 29" src="https://user-images.githubusercontent.com/40481945/54180799-db59c500-44df-11e9-85c7-0e008880a196.png">  
+投稿詳細
 
 ## 言語,プラグイン等
 - Ruby 2.4.4
