@@ -20,6 +20,8 @@ Post Listに反映
 
 <img width="1440" alt="スクリーンショット 2019-03-12 16 08 25" src="https://user-images.githubusercontent.com/40481945/54181283-625b6d00-44e1-11e9-9056-e125b2d0e92c.png">
 
+トップページでスクロールもぜひして見てください
+
 ## 主な使い方
 
 
