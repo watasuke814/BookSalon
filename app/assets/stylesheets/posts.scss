@@ -47,7 +47,7 @@
   background-color: white;
   overflow: hidden;
   position: relative;
-  margin-bottom: 20px;
+  
 }
 .post-left img {
   width: 50px;
@@ -76,6 +76,16 @@
   padding-left: 25px;
   text-align: left;
 }
+
+.pagenation ul li{
+   display: inline;
+   position: relative;
+}
+
+.pagenate a{
+  color:red;
+}
+
 
 /* posts/show ================================ */
 .posts-show {
@@ -187,6 +197,7 @@
 
 .post-menus {
   float: right;
+  margin-top: 20px;
 }
 
 .post-menus a, .post-menus input {
@@ -194,6 +205,11 @@
   text-decoration: underline;
   font-size: 14px;
   padding-right: 10px;
+}
+
+.count{
+  color:black;
+  float:left;
 }
 
 /* comment系 ================================ */
