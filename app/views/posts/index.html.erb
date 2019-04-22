@@ -5,9 +5,7 @@
 
 <div class="main posts-index">
   <div class="container">
-  <!--
-  	<h1 class="form-heading">Post List</h1>
-  -->
+
     <% @posts.each do |post| %>
       <div class="posts-index-item">
       	<div class="post-left">
@@ -25,6 +23,7 @@
       </div>
     <% end %>
 
+    <!--ページネーション-->
     <div class="pagenation">
       <%= will_paginate %>
     </div>

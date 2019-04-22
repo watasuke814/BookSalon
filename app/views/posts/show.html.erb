@@ -1,20 +1,35 @@
 <div class="main posts-show">
   <div class="container">
+
+<!--投稿詳細-->
     <div class="posts-show-item">
+    <!--ユーザ名-->
       <div class="post-user-name">
         <img src="<%= "/user_images/#{@user.image_name}" %>">
         <%= link_to(@user.name, "/users/#{@user.id}") %>
       </div>
-      <div class="postitem">
+    <!---->
+
+    <!--投稿タイトル/投稿画像-->
+      <div class="post-pic_image">
         <p><%= @post.post_title %></p>
         <img src="<%= "/pic_images/#{@post.pic_image}" %>">
       </div>
-      <div class="postcontent">
+    <!---->
+
+    <!--投稿文-->
+      <div class="post-content">
         <%= simple_format(@post.content) %>
       </div>
+    <!---->
+
+    <!--投稿時間-->
       <div class="post-time">
         <%= @post.created_at %>
       </div>
+    <!---->
+
+    <!--いいね機能-->
       <div class="count">
         <% if Like.find_by(user_id: @current_user.id, post_id: @post.id) %>
           <%= link_to("/likes/#{@post.id}/destroy",{method:"post"}) do %>
@@ -27,6 +42,9 @@
         <%end%>
         <%= @likes_count %>
       </div>
+    <!---->
+
+    <!--編集/削除/コメント投稿-->
       <% if @post.user_id == @current_user.id %>
        <div class="post-menus">
           <%= link_to("edit", "/posts/#{@post.id}/edit") %>
@@ -37,13 +55,18 @@
          <%= link_to("comment","/comments/#{@post.id}")%>
        </div>
     </div>
+  <!---->
+<!---->
 
+ <!--コメントタブ-->
     <div class="user-tabs">
       <div class="comment-tab-text">
         comment
       </div>
     </div>
+ <!---->
 
+<!--コメント欄-->
     <% @comments.each do |com| %>
      <% if com.post_id == @post.id %>
       <div class="comments-index">
@@ -64,6 +87,7 @@
       </div>
      <%end%>
     <% end %>
+<!---->
 
   </div>
 </div>

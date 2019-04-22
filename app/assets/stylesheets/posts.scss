@@ -114,7 +114,6 @@
   left: 0;
 }
 
-
 .posts-show form {
   display: inline;
 }
@@ -137,16 +136,16 @@
   object-fit: cover;
 }
 
-.postitem{
+.post-pic_image{
   text-align: center;
   position: relative;
 }
 
-.postcontent{
+.post-content{
   position: relative;
 }
 
-.postitem img{
+.post-pic_image img{
   width: 500px;
   height: 300px;
   border-radius: 20px 20px 20px 20px;

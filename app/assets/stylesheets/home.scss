@@ -155,6 +155,15 @@ header {
   font-size: 27px;
 }
 
+.section-red {
+  background-size: cover;
+  background-image: url("/books.png");
+}
+
+.section-green {
+  background-size: cover;
+  background-image: url("/quote.png");
+}
 /* about ================================ */
 
 .about-main {
@@ -276,7 +285,6 @@ header {
 }
 
 /* test ======================================
-
 .section {
   width: 100%;
 }
@@ -315,14 +323,4 @@ p {
 .section-green {
   background-color: #fff;
 }
-
 */
-.section-red {
-  background-size: cover;
-  background-image: url("/books.png");
-}
-
-.section-green {
-  background-size: cover;
-  background-image: url("/quote.png");
-}
