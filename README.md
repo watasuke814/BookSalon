@@ -1,6 +1,4 @@
 # BookSalon
-
-## What is BookSalon
 <img width="1440" alt="booksalontop" src="https://user-images.githubusercontent.com/40481945/54174799-9f1c6980-44cb-11e9-8dfa-82dccc797883.png">
 It is a web application that allows readers to meet new books by giving their impressions of read books.    
 
